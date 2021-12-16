@@ -10,8 +10,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="YOU/PATH/dist/css/custom-alert-bootstrap.css"> 
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
-<body onload="demo1()">
+<body onload="Swal()">
     <!-- nav เปิด -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top mb-5">
         <div class="container-fluid">
@@ -169,9 +170,29 @@
     <!-- foorter ปิด -->
 </body>
 <script>
-    new customAlert();
-    function demo1() {
-        alert("Alert text");
-    }
+    let timerInterval
+    Swal.fire({
+        title: 'ยินดีต้อนรับเข้าสู่เว็บไซต์',
+        html: 'หน้าต่างจะปิดใน <b></b> ms.',
+        backdrop: 'rgba(0, 0, 0, 0.9)',
+        timer: 2700,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            console.log('I was closed by the timer')
+        }
+    })
+    
 </script>
 </html>
