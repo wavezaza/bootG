@@ -230,8 +230,8 @@
             </section>
         </div>
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2021 Copyright: <a class="text-white" href="#"> Gang Sor Sor </a></div>
+        <a name="a3" href="#" class="nav-link"></a>
     </footer>
-    <a name="a3" href="#" class="nav-link"></a>
     <!-- foorter ปิด -->
     <div class="container-fluid text-end  fixed-bottom">
         <button style="width: 50px; height: 50px;" class="btn-dark" onclick="jump('top')">^</button>
