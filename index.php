@@ -147,6 +147,12 @@
             <h1 class="display-5 text-white mb-4">หัวข้อถัดไป </h1>
         </div>
     </div>
+    <!-- กล่อง 4 -->
+    <div class="card container border-dark border-3  mb-5 py-4 bg-secondary ">
+        <div class="container mb-4 text-center">
+            <h1 class="display-5 text-white mb-4">หัวข้อถัดไป </h1>
+        </div>
+    </div>
     <!-- context ปิด -->
     <!-- foorter เปิด -->
     <footer class="bg-dark text-center text-white">
