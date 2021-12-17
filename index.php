@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,8 +35,12 @@
                     <li class="nav-item" >
                         <a href="#a1" class="nav-link">กิจกรรม</a>
                     </li>
-                    <li class="nav-item" >
-                        <a href="#a2" class="nav-link">เนื้อหา</a>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="true">เนื้อหา</a>
+                        <ul class="dropdown-menu " data-bs-popper="none">
+                            <li><a href="#a2" class="dropdown-item">แนำนำสาขา</a></li>
+                            <li><a href="#a2_1" class="dropdown-item">อุปกรณ์คอมพิวเตอร์</a></li>
+                        </ul>
                     </li>
                     <li class="nav-item" >
                         <a href="#a3" class="nav-link">ติดต่อ</a>
@@ -134,8 +137,8 @@
                                 <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.6435-9/120013540_2254057854769508_4218682213541835304_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=0debeb&_nc_ohc=YGIMe_SgMAMAX_e25K5&_nc_ht=scontent.furt2-1.fna&oh=00_AT8Pr390tFZovijCtS-cVEfawno2O4esd_HDtbIqeubUfQ&oe=61D9CC80"
                                     class="d-block w-100" >
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h3>ห้องเรียน Coworking </h3>
-                                    <p>ห้องเรียนที่คอยอำนวยความสะดวกในการ meeting แลกเปลี่ยนความรู้ และ พักผ่อน!
+                                    <h3> กิจกรรมบายเนียร์ </h3>
+                                    <p>สารสัมพันธ์พี่น้องมีกิจกรรมสายเทคและการปลูกฝังการเป็นผู้นำที่ดี
                                     </p>
                                 </div>
 
@@ -145,7 +148,7 @@
                                 <img src="https://scontent.furt2-1.fna.fbcdn.net/v/t1.6435-9/116433636_1430530077137021_3069610246499415766_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=i9OWjO7Q-y0AX89rS1e&tn=5HXXmuSG-rDjHPx_&_nc_ht=scontent.furt2-1.fna&oh=00_AT9d1Q6rZ5zvNWC-joSV5dh3SLGKsy36ll2328y5KsiG_g&oe=61DB028E"
                                     class="d-block w-100" height="440px">
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h3>บรรยากาศในห้องเรียน</h3>
+                                    <h3>ถ่ายรูปกันสักหน่อย</h3>
                                     <p>บรรณยายมันน่าเบื่อมาลงมือทำกันเถอะ!มุ่นเน้นให้นักศึกษาได้ลงมือปฎิบัติ
                                         และ ทำงานร่วมกันเป็นทีม
                                     </p>
@@ -181,33 +184,60 @@
                 <div class="card mx-2 bg-white p-4" style="width: 350px;">
                     <img class="card-img-top" src="https://sv1.picz.in.th/images/2021/12/17/6H8t3l.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
+                        <h4 class="card-title">Data Analyst</h4>
+                        <p class="card-text">นักวิเคราะห์ข้อมูล</p>
                     </div>
                 </div>
                 <div class="card mx-2 bg-white p-4" style="width: 350px;">
                     <img class="card-img-top" src="https://sv1.picz.in.th/images/2021/12/17/6H8wbk.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
+                        <h4 class="card-title">Frontend Developer</h4>
+                        <p class="card-text">นักพัตนาระบบส่วนหน้าบ้าน</p>
                     </div>
                 </div>
                 <div class="card mx-2 bg-white p-4" style="width: 350px;">
                     <img class="card-img-top" src="https://sv1.picz.in.th/images/2021/12/17/6H81av.png" alt="Card image">
                     <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
-                        <p class="card-text">Some example text.</p>
+                        <h4 class="card-title">FullStack Developer</h4>
+                        <p class="card-text">นักพัฒนาเว็บอย่างเต็มรูปแบบทั้งหน้าบ้าน และหลังบ้าน</p>
                     </div>
+                    <a name="a2_1" href="#foorter" class="nav-link"></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- กล่อง 4 -->
     <div class="card container border-dark border-3  mb-5 py-4 bg-secondary ">
-        <div class="container mb-0 text-center">
-            <h1 class="display-5 text-white ">อาชีพ Backend </h1>
-            <p class=" text-white mb-4 mt-0">เป็นอาชีพที่ทางเว็บเราหยิบมานำเสนอ</p>
+        <div class="container mb-0 ">
+            <h1 class="display-5 text-white text-center ">อาชีพ Backend </h1>
+            <p class=" text-white mb-4 mt-0 text-center">เป็นอาชีพที่ทางเว็บเราหยิบมานำเสนอ</p>
+            <!-- กล่องรูปbackend -->
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+            <div class="card mx-3  p-4" style="width: 450px;">
+                <img src="https://sv1.picz.in.th/images/2021/12/17/6VbcEt.png" class="card-img-top">
+                <div class="card-body card border-2 border-dark mt-3">
+                    <h4 class="card-title">Backend Developer</h4>
+                    <h6 class="card-subtitle mb-2 text-muted">เผยแพร่โดย Web ITD</h6>
+                    <p class="card-text">Backend developer คือ ผู้ที่ออกแบบระบบหลังบ้านของ Program นั่นเอง
+                        หลังบ้านคืออะไร ? โดยปกติเเล้วการทำ Web หรือทำ App จะถูกแบ่งออกเป็น หน้าบ้าน (Front-end)และหลังบ้าน
+                        (Back-end)หน้าบ้าน (Front-end) คือรูปร่างหน้าตาความสวยงาม ปุ่ม สี รูปภาพต่างๆ ส่วนหลังบ้าน
+                        (Back-end)ทำหน้าที่ส่งข้อมูลที่หน้าบ้านต้องการจะใช้ ไปให้เช่น ชื่อ , นามสกุล, เบอร์โทร , email
+                        หรือข้อมูลอื่นๆ ที่จำเป็น</p>
+                    <p class="card-text">ทักษะที่จะได้เรียนรู้สำหรับ backend developer ได้แก่ Design and Development,HTML,CSS,JavaScript,
+                        Database,Web Servers,API,Web Security</p>
+                </div>
+            </div>
+            <div class="card mx-3 p-4" style="width:800px;">
+                <h4 class="card-title text-center mb-3">คลิปวิธีโอเสริมความรู้</h4>
+                <h5 class="card-title text-center ">ทำความรู้จักกับ Back End Deceloper</h5>
+                <iframe class="mb-3" width="100%" height="350" src="https://www.youtube.com/embed/ikT2mcdFLqo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+                <h5 class="card-title text-center mb-3">แนวทางในการเป็น Back End Deceloper</h5>
+                <iframe class="mb-3" width="100%" height="350" src="https://www.youtube.com/embed/l4zeLXEI5Gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+            
         </div>
     </div>
     <!-- context ปิด -->
@@ -267,5 +297,4 @@
         history.replaceState(null, null, url);
     }
 </script>
-
 </html>
