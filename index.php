@@ -167,9 +167,7 @@
         </div>
         <div class="card  border-dark border-2 bg-secondary text-white">
             <div class="card-body">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto necessitatibus libero veniam
-                    doloremque soluta. Commodi, similique, nesciunt corporis laboriosam fuga sapiente non
-                    blanditiis inventore quasi labore tempora enim dicta a!</p>
+                <p>หลักสูตรของเรานั้น มีกิจกรรมเป็นจำนวนมากไม่ว่าจะเป็นเกี่ยวกับการเรียน กีฬา เกม จะจัดแข็งขันกันในสาขา เพื่อสานสัมพันธ์ภายในสาขา และยังมีกิจกรรมอื่นๆอีกมากมาย!</p>
             </div>
         </div>
         <a name="a2" href="#foorter" class="nav-link"></a>
